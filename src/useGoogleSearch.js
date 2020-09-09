@@ -3,6 +3,7 @@ import API_KEY from "./keys";
 
 const CONTEXT_KEY = "707ed3c1e6d398bea";
 
+//custom hook to return the search results
 const useGoogleSearch = (term) => {
   const [data, setData] = useState(null);
 
@@ -17,7 +18,7 @@ const useGoogleSearch = (term) => {
         });
     };
     fetchData();
-  }, [term]);
+  }, [term]); {/*when term changes, useEffect is run*/}
 
   return { data };
 };
