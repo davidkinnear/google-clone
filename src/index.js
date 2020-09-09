@@ -8,7 +8,7 @@ import reducer, { initialState } from "./datalayer/reducer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StateProvider initialState={initialState} reducer={reducer}>
+  <StateProvider initialState={initialState} reducer={reducer}> {/*provide a data layer around the app*/}
       <App />
     </StateProvider>
   </React.StrictMode>,
@@ -19,3 +19,4 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
