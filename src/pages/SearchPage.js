@@ -74,7 +74,7 @@ function SearchPage() {
           </div>
         </div>
       </div>
-
+{/*only render search results if there is a term*/}      
       {term && (
         <div class="searchPage__results">
           <p className="searchPage__resultCount">
